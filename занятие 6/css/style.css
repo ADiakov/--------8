@@ -1,0 +1,114 @@
+
+input {
+    outline: none !important; }
+    /* для того чтобы убрать обвлдку по умолнанию.*/
+
+a {
+font-size: 24px;
+color: green; }
+/* гипер ссылка и ее параметры */
+
+a:hover {
+color: red;
+cursor: wait; }
+/* повидение курсора при навидении на объект */
+
+.one {
+    width: 50px;
+    height: 50px;
+    background: blue; }
+    /* параметры объекта на странице*/
+
+.one:hover {
+    background: green; } 
+    /* поведение объекта при наведении курсора мыши */
+
+a:visited { 
+    color: yellow; }
+    /* посещеная ссылка */
+
+input {
+    border: 1px solid green; 
+    border-radius: 4px; }
+    /* характеристики окна ввода */
+
+input:focus {           
+    border: 2px solid red; }
+    /* размеры и поведение обвотки при выделении. */
+
+div p:first-child {
+    /* background: red; */
+    border-top: 1px solid #c0c0c0;
+    /* выделение первого элемента top верхняя граница, 1 пиксель, solid сплошная линия и ее цвет*/
+}
+
+div p:last-child {
+    /* background: blue; */
+    border-bottom: 1px solid #c0c0c0;
+    /* выдиление последнего элемента в параграфе bottom нижная граница 1 пиксель, solid сплошная линия и ее цвет */
+}
+
+div p:nth-child(even) {
+    background: gray;
+    /* выделение четных строк, обектов */
+}
+
+div p:nth-child(odd) {
+    background: pink;
+    /* выделение не четных строк, обектов */
+}
+
+p::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: green;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+p::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+
+.main {
+    padding: 10px;
+    background: orange;
+}
+
+.block {
+    width: 30px;
+    height: 30px;
+    background: bisque;
+    border: 1px solid black;
+    float: left;
+}
+
+.main::after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+    /* after находится за контентом. Также есть before находится перед контентом*/
+}
+
+p::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+    /* оформление заглавной буквы  */
+}
+
+p::first-line {
+    background: red;
+    /* оформление, окрашивание первой строки. */
+}

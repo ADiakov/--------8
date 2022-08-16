@@ -1,0 +1,84 @@
+/* float: right;
+float: right;
+float: none; */
+
+.clearfix {
+width: 100%;
+clear: both;
+/* clear указывает, может ли элемент быть рядом с плавающими  floating элементами, которые предшествуют ему или должны быть перемещены вниз (очищены) под ними. Свойство clear применяется как к плавающим, так и к неплавающим элементам. */
+/* border: 1px solid black;  */
+}
+
+p {
+    background: pink;
+    /* width: 300px; */
+}
+
+.one {
+    background: orange;
+    width: 50px;
+    height: 50px;
+    float: left;
+    /* float указывает, что элемент должен быть взят из нормального потока и помещён вдоль левой или правой стороны его контейнера, где текст и встроенные элементы будут обтекать его */
+}
+
+.two {
+    background: lime;
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+
+.parent {
+    padding: 10px;
+    background: lightblue;
+}
+
+.three {
+    background:  orange;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+}
+
+.wrap {
+    background: cyan;
+    padding: 5px;
+}
+
+.block {
+    background: #c0c0c0;
+    float: left;
+    width: 47%;
+    min-height: 100%;
+    margin: 0 1.5%;
+}
+
+.block3 {
+    /* 100/3 = 33.333333 */
+    background: #c0c0c0;
+    float: left;
+    width: 31.333333%;
+    min-height: 100%;
+    margin: 0 1%;
+}
+
+.block4 {
+    /* 100/4 = 25 */
+    background: #c0c0c0;
+    float: left;
+    width: 23%;
+    min-height: 100%;
+    margin: 0 1%;
+}
+
+.block5 {
+    /* 100/5 = 20 */
+    background: #c0c0c0;
+    float: left;
+    width: 18%;
+    min-height: 100%;
+    /* min-height устанавливает минимальную высоту элемента. Оно предотвращает используемое значение свойства height от становления меньше, чем значение, указанное для min-height */
+    margin: 0 1%;
+}

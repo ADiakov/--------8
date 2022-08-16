@@ -1,0 +1,63 @@
+/* position  */
+/* static */
+/* fixed */
+/* relative */
+/* absolute */
+/* top left right bottom */
+/* z-index */
+.test {
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 0, 255);
+    position: absolute;
+    /* position: fixed;
+    right: 200px;
+    bottom: 100px  ;
+    top: 100px */
+    bottom: 40px;
+    left: 50px;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    /* position указывает, как элемент позиционируется в документе. top, right, bottom и left определяют конечное местоположение позиционированных элементов */
+    top: 2px;
+}
+     
+
+.rect {
+    width: 150px;
+    /* width устанавливает ширину элемента. */
+    height: 150px;
+    /* height позволят обозначать высоту элемента. */
+    margin: 50px;
+    /* margin определяет внешний отступ на всех четырёх сторонах элемента. */
+    border: 1px solid black;
+    /* border это  универсальное свойство для указания всех персональных свойств границ за раз: border-width-ширина, border-style-стиль, и border-color-цвет. */
+    position: relative;
+}
+
+.sq {
+    width: 50px;
+    height: 50px;
+    background: lime;
+}
+
+.p1 {
+    position: absolute;
+    left:0;
+    bottom: 0;
+    /* bottom частично определяет вертикальную позицию позиционируемого элемента. Оно не влияет на непозиционируемые элементы (т.е. bottom не применится, если задано position: static). */
+    z-index: 2;
+    /* z-index определяет положение позиционированного элемента и его дочерних элементов или флекс-элементов по оси z. Перекрывающие элементы с большим значением z-index будут накладываться поверх элементов с меньшим z-index */
+
+}
+
+.p2 {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    /* right частично определяет горизонтальное положение позиционируемого элемента. Оно не влияет на непозиционируемые элементы (т.е. right не применится, если задано position: static). */
+    background-color: orange;
+    z-index: 1;
+}
